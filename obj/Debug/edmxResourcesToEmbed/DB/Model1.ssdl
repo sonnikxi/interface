@@ -30,6 +30,8 @@
     <Property Name="Id_country" Type="int" Nullable="false" />
     <Property Name="Id_gender" Type="int" Nullable="false" />
     <Property Name="FirstName" Type="nvarchar" MaxLength="50" />
+    <Property Name="Login" Type="varchar" MaxLength="50" />
+    <Property Name="Password" Type="varchar" MaxLength="20" />
   </EntityType>
   <Association Name="FK__Users__Id_countr__3D5E1FD2">
     <End Role="Country" Type="Self.Country" Multiplicity="1" />

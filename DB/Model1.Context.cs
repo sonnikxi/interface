@@ -13,19 +13,18 @@ namespace Interface.DB
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class InformationEntities1 : DbContext
+    public partial class InformationEntities2 : DbContext
     {
-        private static InformationEntities1 _context;
-        public InformationEntities1()
-            : base("name=InformationEntities1")
+        private static InformationEntities2 _context;
+        public InformationEntities2()
+            : base("name=InformationEntities2")
         {
         }
-
-        public static InformationEntities1 GetContext()
+        public static InformationEntities2 GetContext()
         {
             if (_context == null)
             {
-                _context = new InformationEntities1();
+                _context = new InformationEntities2();
             }
             return _context;
         }

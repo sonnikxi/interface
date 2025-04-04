@@ -31,8 +31,8 @@ namespace Interface
             {
                 NameOfCountry = txt
             };
-            DB.InformationEntities1.GetContext().Country.Add(country);
-            DB.InformationEntities1.GetContext().SaveChanges();
+            DB.InformationEntities2.GetContext().Country.Add(country);
+            DB.InformationEntities2.GetContext().SaveChanges();
 
             this.Close();
         }

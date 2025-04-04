@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-  <EntityContainerMapping StorageEntityContainer="Хранилище InformationModelContainer" CdmEntityContainer="InformationEntities1">
+  <EntityContainerMapping StorageEntityContainer="Хранилище InformationModelContainer" CdmEntityContainer="InformationEntities2">
     <EntitySetMapping Name="Country">
       <EntityTypeMapping TypeName="InformationModel.Country">
         <MappingFragment StoreEntitySet="Country">
@@ -33,6 +33,8 @@
           <ScalarProperty Name="Id_country" ColumnName="Id_country" />
           <ScalarProperty Name="Id_gender" ColumnName="Id_gender" />
           <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+          <ScalarProperty Name="Login" ColumnName="Login" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>

@@ -35,6 +35,8 @@
           <Property Name="Id_country" Type="int" Nullable="false" />
           <Property Name="Id_gender" Type="int" Nullable="false" />
           <Property Name="FirstName" Type="nvarchar" MaxLength="50" />
+          <Property Name="Login" Type="varchar" MaxLength="50" />
+          <Property Name="Password" Type="varchar" MaxLength="20" />
         </EntityType>
         <Association Name="FK__Users__Id_countr__3D5E1FD2">
           <End Role="Country" Type="Self.Country" Multiplicity="1" />
@@ -128,6 +130,8 @@
           <Property Name="Id_country" Type="Int32" Nullable="false" />
           <Property Name="Id_gender" Type="Int32" Nullable="false" />
           <Property Name="FirstName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Login" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Password" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
           <NavigationProperty Name="Country" Relationship="Self.FK__Users__Id_countr__3D5E1FD2" FromRole="Users" ToRole="Country" />
           <NavigationProperty Name="Gender" Relationship="Self.FK__Users__Id_gender__3E52440B" FromRole="Users" ToRole="Gender" />
           <NavigationProperty Name="Roles" Relationship="Self.FK__Users__Id_role__3C69FB99" FromRole="Users" ToRole="Roles" />
@@ -168,7 +172,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <EntityContainer Name="InformationEntities1" annotation:LazyLoadingEnabled="true">
+        <EntityContainer Name="InformationEntities2" annotation:LazyLoadingEnabled="true">
           <EntitySet Name="Country" EntityType="Self.Country" />
           <EntitySet Name="Gender" EntityType="Self.Gender" />
           <EntitySet Name="Roles" EntityType="Self.Roles" />
@@ -191,7 +195,7 @@
     <!-- C-S mapping content -->
     <edmx:Mappings>
       <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-        <EntityContainerMapping StorageEntityContainer="Хранилище InformationModelContainer" CdmEntityContainer="InformationEntities1">
+        <EntityContainerMapping StorageEntityContainer="Хранилище InformationModelContainer" CdmEntityContainer="InformationEntities2">
           <EntitySetMapping Name="Country">
             <EntityTypeMapping TypeName="InformationModel.Country">
               <MappingFragment StoreEntitySet="Country">
@@ -224,6 +228,8 @@
                 <ScalarProperty Name="Id_country" ColumnName="Id_country" />
                 <ScalarProperty Name="Id_gender" ColumnName="Id_gender" />
                 <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+                <ScalarProperty Name="Login" ColumnName="Login" />
+                <ScalarProperty Name="Password" ColumnName="Password" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>

@@ -24,3 +24,7 @@ C:\Users\lisav\source\repos\Interface\Interface\obj\Debug\Adding.g.cs
 C:\Users\lisav\source\repos\Interface\Interface\obj\Debug\Adding.baml
 C:\Users\lisav\source\repos\Interface\Interface\obj\Debug\Countries.g.cs
 C:\Users\lisav\source\repos\Interface\Interface\obj\Debug\Countries.baml
+C:\Users\lisav\source\repos\Interface\Interface\obj\Debug\Login.g.cs
+C:\Users\lisav\source\repos\Interface\Interface\obj\Debug\Registr.g.cs
+C:\Users\lisav\source\repos\Interface\Interface\obj\Debug\Login.baml
+C:\Users\lisav\source\repos\Interface\Interface\obj\Debug\Registr.baml

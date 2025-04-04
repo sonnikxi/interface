@@ -32,8 +32,8 @@ namespace Interface
             {
                 var deletedcountry = data.SelectedItem as DB.Country;
 
-                DB.InformationEntities1.GetContext().Country.Remove(deletedcountry);
-                DB.InformationEntities1.GetContext().SaveChanges();
+                DB.InformationEntities2.GetContext().Country.Remove(deletedcountry);
+                DB.InformationEntities2.GetContext().SaveChanges();
                 Fill();
             }
             catch (Exception ex)
@@ -44,7 +44,7 @@ namespace Interface
 
         public void Fill()
         {
-            data.ItemsSource = DB.InformationEntities1.GetContext().Country.ToList();
+            data.ItemsSource = DB.InformationEntities2.GetContext().Country.ToList();
         }
     }
 }

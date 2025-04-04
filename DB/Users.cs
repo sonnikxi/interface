@@ -19,6 +19,8 @@ namespace Interface.DB
         public int Id_country { get; set; }
         public int Id_gender { get; set; }
         public string FirstName { get; set; }
+        public string Login { get; set; }
+        public string Password { get; set; }
     
         public virtual Country Country { get; set; }
         public virtual Gender Gender { get; set; }
