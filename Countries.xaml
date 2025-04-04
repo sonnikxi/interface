@@ -1,0 +1,21 @@
+﻿<Window x:Class="Interface.Countries"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Interface"
+        mc:Ignorable="d"
+        Title="Countries" Height="480" Width="800">
+    <Grid>
+        <Grid>
+            <DataGrid VerticalAlignment="Top" x:Name="data" Height="400" Width="700" Margin="0"
+                      AutoGenerateColumns="False">
+                <DataGrid.Columns>
+                    
+                </DataGrid.Columns>
+            </DataGrid>
+            <Button x:Name="delete" Content="удалить" Margin="0,400,0,0" Height="30" Width="60" Click="delete_Click"></Button>
+        </Grid>
+        
+    </Grid>
+</Window>

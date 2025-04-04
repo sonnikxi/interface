@@ -1,0 +1,27 @@
+﻿<Window x:Class="Interface.Adding"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Interface"
+        mc:Ignorable="d"
+        Title="Adding"  Height="300" Width="500" Background="#dcf1f7">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="100"></RowDefinition>
+            <RowDefinition Height="100"></RowDefinition>
+            <RowDefinition Height="100"></RowDefinition>
+        </Grid.RowDefinitions>
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Top" Grid.Row="0">
+            <Label Content="Добавить страну" Margin="0,15,0,0" FontFamily="Comic Sans MS" FontSize="16"></Label>
+
+        </StackPanel>
+        <Grid Grid.Row="1">
+            <TextBox x:Name ="text" Height="40" Width="250"></TextBox>
+
+        </Grid>
+        <Grid Grid.Row="2" VerticalAlignment="Top">
+            <Button x:Name="adding" Content="Добавить" Height="30" Width="90" Margin="0" Click="adding_Click"></Button>
+        </Grid>
+    </Grid>
+</Window>
