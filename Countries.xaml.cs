@@ -22,7 +22,6 @@ namespace Interface
         public Countries()
         {
             InitializeComponent();
-
             Fill();
         }
 
@@ -45,6 +44,12 @@ namespace Interface
         public void Fill()
         {
             data.ItemsSource = DB.InformationEntities1.GetContext().Country.ToList();
+        }
+
+        private void back_Click(object sender, RoutedEventArgs e)
+        {
+            this.Close();
+
         }
     }
 }

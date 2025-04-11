@@ -23,7 +23,6 @@ namespace Interface
         public MainWindow()
         {
             InitializeComponent();
-            CheckCountry.
         }
 
         private void countryButton_Click(object sender, RoutedEventArgs e)

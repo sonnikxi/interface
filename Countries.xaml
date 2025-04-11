@@ -9,12 +9,13 @@
     <Grid>
         <Grid>
             <DataGrid VerticalAlignment="Top" x:Name="data" Height="400" Width="700" Margin="0"
-                      AutoGenerateColumns="False">
+                      AutoGenerateColumns="True">
                 <DataGrid.Columns>
-                    
+                    <!--<DataGridTextColumn Header="Название" Binding="{Binding NameOfCountry}"></DataGridTextColumn>-->
                 </DataGrid.Columns>
             </DataGrid>
             <Button x:Name="delete" Content="удалить" Margin="0,400,0,0" Height="30" Width="60" Click="delete_Click"></Button>
+            <Button x:Name="back" Content="назад" Margin="600,400,0,0" Height="30" Width="60" Click="back_Click" ></Button>
         </Grid>
         
     </Grid>
